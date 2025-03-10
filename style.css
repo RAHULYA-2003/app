@@ -192,9 +192,9 @@ select{
     color: gray;
 }
 .col2  img{
-     margin: 10px 0px 0px 500px;
+     margin: 10px 0px 0px 400px;
      border-radius: 10px;
-     height: 90%;
+     height: 85%;
      border-left: 35px solid #FFECD6;
      border-bottom: 35px solid #FFECD6;
 }
