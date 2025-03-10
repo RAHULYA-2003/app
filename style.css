@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Funnel+Display:wght@300..800&family=Ga+Maamli&family=Gruppo&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Orbitron:wght@400..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	 font-family: "Host Grotesk", serif;
+     text-decoration: none;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	padding: 2%  4%;
+	text-align:center;
+}
+nav h1{
+	font-size: 35px;
+    color: gray;
+}
+.nav-links{
+	flex: 1;
+	text-align:center;
+}
+.nav-links ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 5px 60px 5px 50px;
+	position: relative;
+	font-weight:500;
+    font-size: 30px;
+}
+.nav-links ul li a{
+	color:gray;
+	text-decoration: none;
+	font-size:20px;
+}
+.nav-links ul li a  .active{
+    color: #FFAD4C;
+}
+ nav .fa-xmark{
+	display: none;
+} 
+nav .fa-bars{
+    display: none;
+}
+ .glass{
+    margin: -30px 0px 0px 1000px;
+    font-size: 20px;
+ }
+.nav-links ul li a:hover{
+	color:#3282F6;
+}
+span{
+    color: #FFAD4C;
+}
+select{
+    border: 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+}
+/*ipad*/
+@media(max-width:1024px){
+    nav{
+        padding: 2%  4%;
+    }
+.nav-links{
+	flex: 1;
+	text-align:left;
+    margin-left: 100px;
+}
+   .glass{
+    margin: -25px 0px 0px 500px;
+    font-size: 15px;
+ }
+   nav h1{
+    font-size: 20px;
+   }
+   .nav-links{
+   margin-top:-10px;
+  }
+ .nav-links ul li{
+    padding: 15px 10px 5px 20px;
+   font-size: 15px;
+ }
+ .nav-links ul li a{
+	font-size:15px;
+}
+nav   .fa-magnifying-glass{
+    padding-left: 1px;
+}
+select{
+    font-size: 15px;
+}
+}
+/*tabview*/
+@media(max-width:991px){
+	nav{
+        padding: 2%  5%;
+   }
+   .glass{
+    margin: -25px 0px 0px 400px;
+    font-size: 15px;
+}
+}
+/* phoneview*/
+@media(max-width:768px){
+    nav-links ul li{
+		display: block;
+    }
+	nav h1{
+	font-size: 40px;
+   }
+	.nav-links{
+		position: fixed;
+		top: 0;
+		right:-200px;
+		background:black;
+		height: 100vh;
+		width:200px;
+		text-align: left;
+		z-index: 2;
+		transition:1s;
+	}
+	nav .fa-solid{
+		display: block;
+		color:black;
+		margin: 10px;
+		font-size:22px;
+		cursor: pointer;
+	}
+	.nav-link ul{
+		padding: 30px;
+	}
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links{
+		position: fixed;
+		top: 0;
+		right:-200px;
+		 background-color: white; 
+		height: 100vh;
+		width:200px;
+		text-align: left;
+		z-index: 2;
+		transition:1s;
+	}
+	nav .fa-solid{
+		display: block;
+		color:black;
+		margin: 10px;
+		font-size:22px;
+		cursor: pointer;
+	}
+	.nav-link ul{
+		padding: 30px;
+	}
+    select{
+        font-size: 15px;
+    }
+}
+/* section */
+.row-flex{
+    padding:3% 5%;
+    width: 100%;
+    height: 100vh;
+ }
+.flex-row{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    }
+.col{
+    height: 420px;
+    width: 700px;
+     position: absolute;
+    top: 80px;
+    left: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 0px #EAEAE8;
+    background-color:#EAEAE8;
+}
+.col h1{
+    font-size: 60px;
+    font-weight:700;
+    padding: 10px 0px 10px 50px;
+    color: #FFAD4C;
+}
+.col p{
+    font-size: 25px;
+    padding: 10px 0px 10px 50px;
+    color: gray;
+}
+.col2  img{
+     margin: 10px 0px 0px 500px;
+     border-radius: 10px;
+     height: 90%;
+     border-left: 35px solid #FFECD6;
+     border-bottom: 35px solid #FFECD6;
+}
+.col button{
+     padding: 15px 40px;
+     margin: 10px 0px 10px 50px;
+     border-radius: 10px;
+     font-size:20px;
+     background-color:#FFAD4C;
+     border: 0;
+     color:white;
+     font-weight: 900;
+}
+/*ipad*/
+@media(max-width:1024px){
+    .flex-row{
+        flex-direction: column;
+        position: relative;
+    }
+    .col{
+        height: 300px;
+        width: 500px;
+        position: static;
+        top: 0px;
+        left: 0px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 16px 0px gray;
+        margin-left: 50px;
+    }
+    .col2  img{
+        
+        margin: 50px 0px 0px 50px;
+        border-radius: 10px;
+        width: 50vh;
+   }
+   .col h1{
+    font-size: 35px;
+    font-weight:700;
+    padding: 10px 0px 10px 50px;
+   }
+.col p{
+    font-size: 15px;
+    padding: 10px 0px 10px 50px;
+}
+.col button{
+    padding: 10px 30px;
+    margin: 10px 0px 10px 50px;
+    border-radius: 10px;
+    font-size:15px;
+    background-color: lightsalmon;
+    border: 0;
+    color:white;
+    font-weight: 900;
+}
+}
+@media(max-width:991px){
+    .col{
+        height: 300px;
+        width: 500px;
+        position: static;
+        top: 10px;
+        left: 0px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 16px 0px gray;
+        margin-top: 30px;
+        background-color: transparent;
+    }
+    .col2  img{
+        margin: 50px 50px;
+        border-radius: 10px;
+        width: 45vh;
+    }
+   .col h1{
+    font-size: 35px;
+    padding: 20px 0px 10px 50px;   
+}
+}
+@media(max-width:768px){
+    .col{
+        height: 300px;
+        width: 300px;
+        position: static;
+        top: 10px;
+        left: 0px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 16px 0px gray;
+        margin: 30px 0px 0px 10px;
+    }
+    .col2  img{
+        margin: 50px 10px;
+        border-radius: 10px;
+        border-left: 10px solid #FFECD6;
+        border-bottom: 10px solid #FFECD6;
+        width: 50vh;
+      }
+   .row-flex{
+    padding:3% 5%;
+    align-items: center;
+   }
+   .col h1{
+    font-size: 20px;
+    padding: 20px 0px 10px 50px;
+   }
+}
+@media(max-width:434px){
+    .col2 img{
+        width: 40vh;
+    }
+}
+/* some */
+.some  h1{
+    margin-top: 60px;
+    text-align: center;
+    color: gray;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.font{
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    color: gray;
+}
+ .font .toko{
+    font-family: "Comfortaa", sans-serif;
+}

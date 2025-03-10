@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><H1><Span>APJ</Span>&nbsp;Furniture</H1></a>
+        <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#page1" style="color: rgb(232, 123, 86);">Home</a></li>
+                <li><a href="#page2"><select><option>Product</option></select></a></li>
+                <li><a href="#page3">About</a></li>
+                <li><a href="#page5">Contact Us</a></li>
+               <div class="glass"> <i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa-solid fa-user"></i></div>
+
+                
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="row-flex">
+      <div class="flex-row"> 
+        <div class="col">
+          <h1>Help You To Make <br>Modern Funiture</h1>
+          <p>We help you to creat organize your room to be <br> more cozy, design by Professional interior <br>designer</p>
+          <button>See Our Product </button>
+        </div>
+        <div class="col2"><img src="1.jpeg" alt=""></div>
+      </div>
+      <div class="some">
+        <h1>some of our trusted company</h1>
+      </div>
+      <!-- <div class="font">
+        <div><h1>Google</h1></div>
+        <div class="toko"><h1>tokopedia</h1></div>
+        <div><h1>tiket<i class="fa-solid fa-circle"></i>com</h1></div>
+        <div><H1><i class="fa-brands fa-microsoft"></i>Microsoft</H1></div>
+      </div> -->
+    </section> 
+
+    
+
+
+
+
+    <script>
+		
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+       }
+       function hideMenu(){
+			navLinks.style.right = "-200px";
+        }
+	 </script>
+
+</body>
+</html>
